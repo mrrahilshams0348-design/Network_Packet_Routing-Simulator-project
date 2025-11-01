@@ -1,8 +1,5 @@
 The overall structure of my project
 
-
-
-
 NetworkRoutingSimulator/
 │
 ├── cpp_backend/
@@ -21,4 +18,24 @@ NetworkRoutingSimulator/
 │   │   ├── sample_network.txt
 │   │   └── results.json
 │
-└── README.md                 # Project overview, setup guide
+└── README.md         
+
+
+
+
+***************I’ll split the project into two main layers:*****************
+
+"""""""""""""""""""""a. Backend (C++)"""""""""""""""""""""""
+Handles:
+
+1)Heavy data structure work
+2)Routing algorithms (Dijkstra, Bellman-Ford, etc.)
+3)Graph creation and path calculations
+4)C++ gives faster execution, especially for large networks or complex routing.
+
+"""""""""""""""""""""b. Frontend / Control (Python)"""""""""""""""""""
+Handles:
+1)ser interface (CLI or GUI using Tkinter/PyQt/Streamlit)
+2)Input/output management
+3)Visualization of network routes
+4)Sending data to C++ and reading back results
